@@ -17,4 +17,4 @@
 </div>
 
 > [!NOTE]
-> This repository is a work in progress. The source code will be made avaliable at a later time. To listen to sound examples, please use the button above.
+> This repository is a work in progress. The source code will be made available at a later time. To listen to sound examples, please use the button above.
