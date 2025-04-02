@@ -6,12 +6,14 @@
   Victor Zheleznov, Stefan Bilbao, Alec Wright and Simon King
 </p>
 
-<p style="font-size: 1.0em; text-align: center">
+<p style="font-size: 1.0em" align="center">
   Accompanying repository for the DAFx25 submission
 </p>
 
 <div align="center">
+  
   [![Sound Examples](https://img.shields.io/badge/Sound_Examples-blue)](https://victorzheleznov.github.io/dafx25/)
+  
 </div>
 
 > [!NOTE]
