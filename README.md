@@ -18,3 +18,7 @@
 
 > [!NOTE]
 > This repository is a work in progress. The source code will be made available at a later time. To listen to sound examples, please use the button above.
+
+## Repository Contents
+
+`docs/audio/` includes all sound examples for test and training datasets used in the submission. Some of these sound examples are presented on the accompanying web-page.
