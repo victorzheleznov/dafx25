@@ -21,4 +21,4 @@
 
 ## Repository Contents
 
-`audio/` includes all sound examples for test and training datasets used in the submission. Some of these sound examples are presented on the accompanying web-page.
+`audio/` includes all sound examples for the datasets used in the submission. Some of these sound examples are presented on the accompanying web-page.
