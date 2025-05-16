@@ -20,10 +20,13 @@ classes:
 </p>
 
 <p style="font-size: 1.0em; text-align: center">
-  Accompanying web-page for the DAFx25 submission
+  Accompanying web-page for the DAFx25 paper
 </p>
 
 <div style="text-align: center; align-items: center">
+  <a href="https://arxiv.org/abs/2505.10511" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">
+    arXiv
+  </a>
   <a href="https://github.com/victorzheleznov/dafx25" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">
     Code
   </a>
@@ -39,7 +42,7 @@ Modal synthesis methods are a long-standing approach for modelling distributed m
 
 ## Sound Examples
 
-Below are some selected sound examples along with string and excitation parameters for the datasets used in the submission. All sound examples can be downloaded from [the accompanying repository](https://github.com/victorzheleznov/dafx25/tree/master/audio).
+Below are some selected sound examples along with string and excitation parameters for the datasets used in the paper. All sound examples can be downloaded from [the accompanying repository](https://github.com/victorzheleznov/dafx25/tree/master/audio).
 
 
 
