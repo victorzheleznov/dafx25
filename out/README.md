@@ -10,5 +10,5 @@ Trained models used in the paper are listed in the table below.
 
 Each folder contains:
 - `cfg.yaml` file with training run configuration;
-- `checkpoint_best.yaml` checkpoint with the lowest validation loss;
-- `checkpoint_5000.yaml` checkpoint from the last epoch.
+- `checkpoint_best.pt` checkpoint with the lowest validation loss;
+- `checkpoint_5000.pt` checkpoint from the last epoch.
