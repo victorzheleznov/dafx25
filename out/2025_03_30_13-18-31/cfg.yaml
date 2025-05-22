@@ -1,0 +1,71 @@
+model:
+  _target_: src.models.ModalSystem
+  fs: 44100
+  dur: 0.001
+  method: verlet
+  nl:
+    _target_: src.models.BaseMLP
+    in_dim: 1
+    hidden_dim:
+    - 100
+    - 100
+    out_dim: 1
+    activation:
+      _target_: torch.nn.LeakyReLU
+    bias: true
+    init_name: kaiming_normal_
+dataset:
+  _target_: src.datasets.NonlinearOscillatorDataset
+  fs: 44100
+  dur: 1
+  method: verlet
+  omega_range:
+  - 400
+  - 400
+  sigma_range:
+  - 0
+  - 0
+  gamma_range:
+  - 110
+  - 110
+  exc_amp_range:
+  - 4000000.0
+  - 5000000.0
+  exc_dur_range:
+  - 0.0005
+  - 0.0015
+  exc_type: 1
+  pos_ic_range:
+  - 0
+  - 0
+  vel_ic_range:
+  - 0
+  - 0
+  num_variations: 60
+  save: true
+  nl_name: sinh
+writer:
+  _target_: src.utils.writer.WandBWriter
+  project: null
+  mode: offline
+optimiser:
+  _target_: torch.optim.Adam
+  lr: 0.001
+loss_func:
+  _target_: src.losses.MSELoss
+collate_func:
+  _target_: src.datasets.SliceCollator
+  slice_dur: 0.001
+num_epochs: 5000
+batch_size: 8
+split:
+- 0.8
+- 0.2
+- 0.0
+device: auto
+seed: 46527
+monitor: min valid/loss
+early_stop: -1
+log_step: 500
+max_grad_norm: null
+save_dir: out

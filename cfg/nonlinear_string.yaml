@@ -1,0 +1,29 @@
+defaults:
+  - model: modal_system
+  - dataset: nonlinear_string_dataset_train_valid
+  - writer: wandb
+  - _self_
+model:
+  dur: ${collate_func.slice_dur}
+  nl:
+    in_dim: ${dataset.num_modes}
+    out_dim: ${dataset.num_modes}
+    hidden_dim: [100, 100, 100, 100, 100]
+optimiser:
+  _target_: torch.optim.Adam
+  lr: 1e-3
+loss_func:
+  _target_: src.losses.MSELoss
+collate_func:
+  _target_: src.datasets.SliceCollator
+  slice_dur: 1e-3
+num_epochs: 5000
+batch_size: 1
+split: [0.8, 0.2, 0.0]
+device: auto
+seed: 46527
+monitor: "min valid/loss"
+early_stop: -1
+log_step: 500
+max_grad_norm: null
+save_dir: "out"

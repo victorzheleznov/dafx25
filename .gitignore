@@ -1,0 +1,14 @@
+.vscode/
+.venv/
+__pycache__/
+data/
+notebooks/
+out/
+outputs/
+wandb/
+test/
+.env
+*.sh
+*.txt
+*.lprof
+*.wav

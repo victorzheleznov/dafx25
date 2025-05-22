@@ -1,0 +1,15 @@
+_target_: src.datasets.NonlinearStringDataset
+fs: 88200
+dur: 2
+method: "verlet"
+num_modes: 100
+gamma_range: [123.4, 123.4]
+kappa_range: [1.01, 1.01]
+sigma0_range: [3, 3]
+sigma1_range: [2e-4, 2e-4]
+xe_range: [0.1, 0.9]
+xo_range: [0.1, 0.9]
+exc_amp_range: [2e4, 3e4]
+exc_dur_range: [0.5e-3, 1.5e-3]
+exc_type: 1
+num_variations: 60

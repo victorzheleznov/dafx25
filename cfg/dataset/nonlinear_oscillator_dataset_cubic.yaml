@@ -1,0 +1,14 @@
+_target_: src.datasets.NonlinearOscillatorDataset
+fs: 44100
+dur: 1
+method: "verlet"
+omega_range: [400, 400]
+sigma_range: [0, 0]
+gamma_range: [110, 110]
+exc_amp_range: [4e6, 5e6]
+exc_dur_range: [0.5e-3, 1.5e-3]
+exc_type: 1
+pos_ic_range: [0, 0]
+vel_ic_range: [0, 0]
+num_variations: 60
+save: True

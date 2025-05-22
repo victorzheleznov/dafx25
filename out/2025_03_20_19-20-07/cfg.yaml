@@ -1,0 +1,76 @@
+model:
+  _target_: src.models.ModalSystem
+  fs: 88200
+  dur: 0.001
+  method: verlet
+  nl:
+    _target_: src.models.BaseMLP
+    in_dim: 100
+    hidden_dim:
+    - 100
+    - 100
+    - 100
+    - 100
+    - 100
+    out_dim: 100
+    activation:
+      _target_: torch.nn.LeakyReLU
+    bias: true
+    init_name: kaiming_normal_
+dataset:
+  _target_: src.datasets.NonlinearStringDataset
+  fs: 88200
+  dur: 2
+  method: verlet
+  num_modes: 100
+  gamma_range:
+  - 123.4
+  - 123.4
+  kappa_range:
+  - 1.01
+  - 1.01
+  sigma0_range:
+  - 3
+  - 3
+  sigma1_range:
+  - 0.0002
+  - 0.0002
+  xe_range:
+  - 0.1
+  - 0.9
+  xo_range:
+  - 0.1
+  - 0.9
+  exc_amp_range:
+  - 20000.0
+  - 30000.0
+  exc_dur_range:
+  - 0.0005
+  - 0.0015
+  exc_type: 1
+  num_variations: 60
+writer:
+  _target_: src.utils.writer.WandBWriter
+  project: null
+  mode: offline
+optimiser:
+  _target_: torch.optim.Adam
+  lr: 0.001
+loss_func:
+  _target_: src.losses.MSELoss
+collate_func:
+  _target_: src.datasets.SliceCollator
+  slice_dur: 0.001
+num_epochs: 5000
+batch_size: 1
+split:
+- 0.8
+- 0.2
+- 0.0
+device: auto
+seed: 46527
+monitor: min valid/loss
+early_stop: -1
+log_step: 500
+max_grad_norm: null
+save_dir: out

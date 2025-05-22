@@ -1,0 +1,3 @@
+_target_: src.utils.writer.WandBWriter
+project: null
+mode: "offline"

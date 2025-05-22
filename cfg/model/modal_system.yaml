@@ -1,0 +1,13 @@
+_target_: src.models.ModalSystem
+fs: ${dataset.fs}
+dur: ${dataset.dur}
+method: ${dataset.method}
+nl:
+  _target_: src.models.BaseMLP
+  in_dim: 1
+  hidden_dim: [100, 100]
+  out_dim: 1
+  activation:
+    _target_: torch.nn.LeakyReLU
+  bias: True
+  init_name: "kaiming_normal_"
