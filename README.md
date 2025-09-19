@@ -11,9 +11,10 @@
 </p>
 
 <div align="center">
-  
-  [![arXiv](https://img.shields.io/badge/arXiv-2505.10511-b31b1b.svg)](https://arxiv.org/abs/2505.10511)
+
+  [![Paper](https://img.shields.io/badge/Paper-blue)](https://www.dafx.de/paper-archive/2025/DAFx25_paper_37.pdf)
   [![Sound Examples](https://img.shields.io/badge/Sound_Examples-blue)](https://victorzheleznov.github.io/dafx25/)
+  [![arXiv](https://img.shields.io/badge/arXiv-2505.10511-b31b1b.svg)](https://arxiv.org/abs/2505.10511)
   
 </div>
 
@@ -121,10 +122,12 @@ The source code includes an option to use JIT compilation for numerical solver (
 
 If you use this work, please use the following citation:
 ```
-@inproceedings{Zheleznov2025,
-    author = {V. Zheleznov and S. Bilbao and A. Wright and S. King},
+@inproceedings{ZheleznovEtal2025LearningNonlinearDynamics,
+    author = {Zheleznov, V. and Bilbao, S. and Wright, A. and King, S.},
     title = {{L}earning {N}onlinear {D}ynamics in {P}hysical {M}odelling {S}ynthesis using {N}eural {O}rdinary {D}ifferential {E}quations},
     booktitle = {Proc. 28th Int. Conf. Digital Audio Effects},
-    year = {2025}
+    year = {2025},
+    month = {9},
+    pages = {142--149}
 }
 ```
