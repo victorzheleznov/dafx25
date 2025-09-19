@@ -24,11 +24,14 @@ classes:
 </p>
 
 <div style="text-align: center; align-items: center">
-  <a href="https://arxiv.org/abs/2505.10511" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">
-    arXiv
+  <a href="https://www.dafx.de/paper-archive/2025/DAFx25_paper_37.pdf" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">
+    Paper
   </a>
   <a href="https://github.com/victorzheleznov/dafx25" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">
     Code
+  </a>
+  <a href="https://arxiv.org/abs/2505.10511" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">
+    arXiv
   </a>
 </div>
 
